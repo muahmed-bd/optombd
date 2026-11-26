@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OptomBD — Clinical Visual Acuity System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="mode-standard">
+
+  <main id="app-viewport" tabindex="0" aria-live="polite" style="outline: none;">
+
+    <header id="hud-top">
+      <div class="brand">
+        <span class="brand-title">OptomBD</span>
+        <span class="brand-badge" id="hud-chart-type">ই চার্ট</span>
+        <span class="brand-badge mirror-badge hidden" id="hud-mirror-badge">MIRROR ON</span>
+      </div>
+      <div class="acuity-readout">
+        <div class="metric-box">
+          <span class="label">METRIC (6M)</span>
+          <span class="value" id="hud-metric">6/60</span>
+        </div>
+        <div class="metric-box">
+          <span class="label">IMPERIAL (20FT)</span>
+          <span class="value" id="hud-imperial">20/200</span>
+        </div>
+        <div class="metric-box">
+          <span class="label">LOGMAR</span>
+          <span class="value" id="hud-logmar">+1.00</span>
+        </div>
+      </div>
+    </header>
+
+    <div id="chart-mirror-wrapper">
+      <div id="duochrome-bg" aria-hidden="true">
+        <div class="duo-red"></div>
+        <div class="duo-green"></div>
+      </div>
+
+      <section id="optotype-stage">
+        <div id="optotype-row" role="img" aria-label="Visual Acuity Optotypes"></div>
+      </section>
+    </div>
+
+    <nav id="onscreen-remote" aria-label="On-screen chart controls">
+      <button type="button" id="btn-up" class="remote-btn">▲ Bigger</button>
+      <button type="button" id="btn-down" class="remote-btn">▼ Smaller</button>
+      <button type="button" id="btn-left" class="remote-btn">◄ Prev / Rand</button>
+      <button type="button" id="btn-right" class="remote-btn">► Next / Rand</button>
+      <button type="button" id="btn-menu" class="remote-btn menu-trigger">☰ MENU</button>
+    </nav>
+
+    <footer id="hud-bottom">
+      <div class="status-group">
+        <span>Distance: <strong id="hud-distance">3.0 m</strong></span>
+        <span class="sep">|</span>
+        <span>Mode: <strong id="hud-display-mode">Full Line</strong></span>
+        <span class="sep">|</span>
+        <span>Mirror: <strong id="hud-mirror-text">Off</strong></span>
+      </div>
+      <div class="remote-hints">
+        <span>[▲/▼] Acuity</span>
+        <span>[◄/►] Randomize</span>
+        <span>[OK / MENU] Cards</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <aside id="tv-menu-overlay" class="hidden" role="dialog" aria-modal="true">
+    <div id="overlay-container" class="overlay-shell"></div>
+  </aside>
+
+  <script src="js/optotypes.js"></script>
+  <script src="js/anatomy.js"></script>
+  <script src="js/common-diseases.js"></script>
+  <script src="js/our-apps.js"></script>
+  <script src="js/developer.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
