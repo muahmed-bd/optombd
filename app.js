@@ -16,7 +16,7 @@
   const STORAGE_KEY = 'optombd_config_v3';
 
   // Replace YOUR_GITHUB_USER and YOUR_REPO with your actual repository details
-  const CURRENT_APP_VERSION = '2.4.0';
+  const CURRENT_APP_VERSION = '1.1.0';
   const REMOTE_VERSION_URL = 'https://raw.githubusercontent.com/muahmed-bd/optombd/main/version.json';
 
   const MENU_CARDS_12 = [
