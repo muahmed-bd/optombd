@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "versionCode": 1,
+  "releaseNotes": "প্রাথমিক রিলিজ",
+  "files": [
+    "index.html",
+    "style.css",
+    "app.js",
+    "js/anatomy.js",
+    "js/common-diseases.js",
+    "js/developer.js",
+    "js/optotypes.js",
+    "js/our-apps.js",
+    "assets/anatomy/astigmatism.png",
+    "assets/anatomy/cataract.png",
+    "assets/anatomy/ciliary-body.png",
+    "assets/anatomy/cornea.png",
+    "assets/anatomy/eyeball.png",
+    "assets/anatomy/eyelids.png",
+    "assets/anatomy/glaucoma.png",
+    "assets/anatomy/hypermetropia.png",
+    "assets/anatomy/keratoconus.png",
+    "assets/anatomy/lens.png",
+    "assets/anatomy/myopia.png",
+    "assets/anatomy/retina.png",
+    "assets/anatomy/vitreous.png"
+  ]
+}
