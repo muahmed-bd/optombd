@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "versionCode": 3,
-  "releaseNotes": "প্রাথমিক রিলিজ",
+  "releaseNotes": "Release version 1",
   "files": [
     "index.html",
     "style.css",
@@ -23,7 +23,7 @@
     "assets/anatomy/lens.png",
     "assets/anatomy/myopia.png",
     "assets/anatomy/retina.png",
-    "assets/anatomy/vitreous.png"
+    "assets/anatomy/vitreous.png",
     "assets/ishihara/plate-01.jpg",
     "assets/ishihara/plate-02.jpg",
     "assets/ishihara/plate-03.jpg",
